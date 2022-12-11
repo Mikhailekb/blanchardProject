@@ -1,0 +1,938 @@
+@media (max-width: 1600px) {
+    .contacts-block {
+        gap: 0;
+    }
+
+    .contacts-block {
+        padding: 42px 50px;
+        padding-right: 45px;
+        display: block;
+    }
+
+    .contacts__location-adress {
+        font-size: 14px;
+        line-height: 19px;
+    }
+
+    .contacts__location-title {
+        margin-bottom: 10px;
+    }
+
+    .contacts__form {
+        margin-right: 0;
+    }
+
+    .contacts__location {
+        margin-bottom: 29px;
+    }
+
+    .contacts-input {
+        padding: 8px 24px;
+    }
+
+    .contacts__btn-send {
+        padding: 8px 39px;
+        margin-top: -1px;
+    }
+
+    .contacts-btn-2 {
+        display: none;
+    }
+
+    .contacts__form {
+        margin-bottom: 29px;
+    }
+
+    .label-input {
+        width: 271px;
+        margin-right: 6px;
+    }
+}
+
+@media (max-width: 1285px) {
+    .stop-scroll {
+        overflow: hidden;
+    }
+
+    .header__search-btn {
+        display: block;
+    }
+
+    .header__search-btn svg rect,
+    .header__search-btn svg path {
+        fill: white;
+    }
+
+    .header__search-btn:focus-visible {
+        outline: none;
+    }
+
+    .header__search-btn:focus-visible svg rect,
+    .header__search-btn:focus-visible svg path {
+        fill: var(--heliotrope);
+    }
+
+    .header__block {
+        justify-content: space-between;
+    }
+
+    .nav__list {
+        margin: 0;
+        align-items: flex-start;
+    }
+
+    .header__logo {
+        margin: 0;
+    }
+
+    .header__wrapper-bottom {
+        display: none;
+    }
+
+    .burger {
+        position: relative;
+        display: block;
+        width: 36px;
+        height: 28px;
+        flex-shrink: 0;
+        transition: var(--background-transition);
+    }
+
+    .burger:focus-visible {
+        outline: none;
+    }
+
+    .burger:focus-visible .burger__line {
+        background-color: var(--heliotrope);
+    }
+
+    .burger__line {
+        position: absolute;
+        left: 0;
+        height: 3px;
+        background-color: var(--white-color);
+        transition: var(--transform-transition), var(--opacity-transition), top 0.3s ease-in-out, left 0.3s ease-in-out;
+    }
+
+    .burger__line:nth-child(1) {
+        top: 1px;
+        width: 36px;
+    }
+
+    .burger__line:nth-child(2) {
+        width: 28.2px;
+        top: 50%;
+    }
+
+    .burger__line:nth-child(3) {
+        width: 24px;
+        bottom: 0;
+    }
+
+    .header__inner {
+        width: 100%;
+        position: absolute;
+        left: 0;
+        top: 0;
+        height: 100vh;
+        z-index: 1000;
+        padding: 48px;
+        padding-top: 97px;
+        background-color: rgba(0, 0, 0, 0.9);
+        visibility: hidden;
+        transform: translateY(-120%);
+        transition: visibility 0.3s ease-in-out, var(--transform-transition);
+    }
+
+    .header__menu {
+        overflow-y: auto;
+        flex-direction: column;
+        justify-content: initial;
+        align-items: flex-start;
+    }
+
+    .nav-header .nav__list {
+        flex-direction: column;
+    }
+
+    .nav-header .nav__item:not(:last-child) {
+        margin-right: 0;
+    }
+
+    .nav-header .nav__link {
+        font-size: 24px;
+        line-height: 64px;
+    }
+
+    .header__inner--active {
+        visibility: visible;
+        transform: translateY(0);
+    }
+
+    .burger--active .burger__line {
+        z-index: 1001;
+    }
+
+    .burger--active .burger__line:nth-child(2) {
+        opacity: 0;
+    }
+
+    .burger--active .burger__line:first-child {
+        width: 36px;
+        left: 25%;
+        top: 50%;
+        transform: rotate(45deg);
+        transform-origin: center;
+    }
+
+    .burger--active .burger__line:last-child {
+        width: 36px;
+        left: 25%;
+        top: 50%;
+        transform: rotate(-45deg);
+        transform-origin: center;
+    }
+
+    .header__account {
+        max-width: 500px;
+        padding: 14px 90px;
+        border: 2px solid var(--amethyst);
+        border-radius: 40px;
+        margin-top: auto;
+    }
+
+    .events-btn-next,
+    .events-btn-prev {
+        display: none;
+    }
+
+    .events-pagination {
+        display: block;
+    }
+
+    .contacts__form {
+        margin-right: 0;
+    }
+
+    .panel__search-btn {
+        margin-right: 11px;
+    }
+
+    .panel__form {
+        margin-right: 25px;
+    }
+
+    .panel__close-btn:focus-visible {
+        outline: none;
+    }
+
+    .header__search-mobile.panel--active {
+        opacity: 1;
+        visibility: visible;
+        transform: none;
+    }
+
+    .is--hidden {
+        opacity: 0;
+        visibility: hidden;
+    }
+}
+
+@media (max-width: 1024px) {
+
+    .header__block {
+        padding-top: 28px;
+        padding-bottom: 27px;
+    }
+
+    .header__logo {
+        margin-top: 1px;
+        margin-left: -6px;
+    }
+
+    .hero__content {
+        padding-top: 105px;
+        padding-bottom: 115px;
+    }
+
+    .hero__descr {
+        margin-top: -11px;
+        max-width: 670px;
+        margin-bottom: 133px;
+    }
+
+
+    .catalog__content-wrap {
+        width: calc(100% / 2 - 25px);
+    }
+
+    .catalog__accordion {
+        width: calc(100% / 2 - 25px);
+    }
+
+    .gallary__content {
+        padding-bottom: 42px;
+    }
+
+    .gallary__container {
+        padding-bottom: 80px;
+    }
+
+    .catalog__descr {
+        margin-bottom: 39px;
+    }
+
+    .accordion__inner-list {
+        width: 116%;
+        column-count: 2;
+    }
+
+    .catalog__painter-life-years {
+        margin-bottom: 16px;
+    }
+
+    .events-card__content {
+        padding: 15px 33px;
+        min-height: 483px;
+    }
+
+    .events-card__place {
+        text-align: right;
+        align-self: flex-end;
+        font-weight: 400;
+        margin-bottom: 3px;
+    }
+
+    .events-card__title {
+        margin-bottom: 5px;
+    }
+
+    .events-card__link {
+        margin-bottom: 24px;
+    }
+
+    .projects {
+        padding-top: 80px;
+        padding-bottom: 41px;
+    }
+
+    .projects-wrapper {
+        padding: 0px 53px;
+    }
+
+    .projects__subhead {
+        margin-bottom: 22px;
+    }
+
+    .projects-link {
+        height: 128px;
+    }
+
+    .footer__wrapper {
+        padding: 40px 0;
+    }
+
+    .footer__logo {
+        padding-top: 10px;
+    }
+
+    .footer__link {
+        width: 60px;
+        height: 60px;
+    }
+
+    .projects-img {
+        max-width: 73%;
+    }
+
+    .modal {
+        max-width: 594px;
+    }
+
+    .accordion__gag {
+        padding: 33px 10px;
+        padding-right: 0;
+    }
+
+    .accordion__gag-img {
+        width: 173px;
+        height: 114px;
+        outline-offset: 6px;
+        margin-right: 33px;
+    }
+
+    .modal-img {
+        width: 264px;
+        height: 594px;
+    }
+}
+
+@media (max-width: 920px) {
+    .header__search-mobile {
+        top: 0;
+        right: 50px;
+        left: 50px;
+        bottom: 0;
+        align-items: center;
+    }
+
+    .panel__form {
+        width: 100%;
+    }
+
+    .panel__input {
+        width: 100%;
+    }
+
+    .catalog__wrap {
+        flex-direction: column-reverse;
+    }
+
+    .catalog__accordion {
+        width: 100%;
+    }
+
+    .accordion__inner-list {
+        width: 100%;
+        column-count: 3;
+    }
+
+    .catalog__descr {
+        margin-bottom: 21px;
+    }
+
+    .catalog__content-wrap {
+        width: 100%;
+    }
+
+    .catalog__painter-photo {
+        margin-bottom: 17px;
+    }
+
+    .catalog__painter-life-years {
+        margin-bottom: 6px;
+    }
+}
+
+@media (max-width: 768px) {
+    .header__block {
+        padding-top: 27px;
+    }
+
+    .gallary__container {
+        flex-direction: column;
+    }
+
+    .gallary__block {
+        max-width: 281px;
+        margin-bottom: 32px;
+    }
+
+    .gallary__content {
+        padding-bottom: 22px;
+        margin-right: 0;
+    }
+
+    .swiper-top {
+        padding-left: 0px;
+        width: 131px;
+    }
+
+    .events-card__content {
+        padding-right: 17px;
+    }
+
+    .events-card__title {
+        padding-right: 9px;
+    }
+
+    .projects__descr {
+        margin-bottom: 29px;
+    }
+
+    .projects__subhead {
+        margin-bottom: 27px;
+    }
+
+    .projects-link {
+        height: 108px;
+    }
+
+    .projects-img {
+        max-width: 81%;
+    }
+
+    .label-input {
+        width: 323px;
+    }
+
+    .contacts__btn-send {
+        padding: 6px 28px;
+        margin-top: -2px;
+    }
+
+    .contacts__form {
+        margin-bottom: 30px;
+    }
+
+    .modal {
+        max-width: 668px;
+    }
+
+    .modal-img {
+        width: 301px;
+        height: 594px;
+    }
+}
+
+@media (max-width: 650px) {
+
+    .header__logo {
+        width: 97px;
+    }
+
+    .header__search-btn svg {
+        width: 18px;
+    }
+
+    .panel__search-btn svg {
+        width: 18px;
+    }
+
+    .panel__close-btn svg {
+        width: 18px;
+    }
+
+    .burger {
+        width: 25px;
+        height: 19px;
+        margin-top: -6px;
+    }
+
+    .burger__line {
+        height: 2px;
+    }
+
+    .burger__line:nth-child(1) {
+        width: 25px;
+    }
+
+    .burger__line:nth-child(2) {
+        width: 16px;
+    }
+
+    .burger__line:nth-child(3) {
+        width: 10px;
+    }
+
+    .header__block {
+        padding-top: 8px;
+        padding-bottom: 6px;
+    }
+
+    .hero__content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 29px;
+        padding-bottom: 45px;
+    }
+
+    .hero__title {
+        text-align: center;
+        font-size: 32px;
+        line-height: 44px;
+        margin-bottom: 13px;
+    }
+
+    .hero__descr {
+        text-align: center;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 16px;
+        margin-bottom: 41px;
+    }
+
+    .hero__btn {
+        font-size: 12px;
+        line-height: 16px;
+        padding: 9px 16px;
+    }
+
+    .section-title {
+        font-size: 28px;
+        line-height: 38px;
+    }
+
+    .descr {
+        font-size: 16px;
+    }
+
+    .about__descr {
+        font-size: 14px;
+    }
+
+    .container {
+        padding: 0 15px;
+    }
+
+    .about {
+        padding-top: 50px;
+        padding-bottom: 41px;
+    }
+
+    .about__title {
+        margin-bottom: 12px;
+    }
+
+    .gallary {
+        padding-top: 50px;
+        padding-bottom: 25px;
+    }
+
+    .gallary__title {
+        margin-bottom: 12px;
+    }
+
+    .gallary__spec {
+        margin-bottom: 5px;
+    }
+
+    .gallary-slider {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .gallary__content {
+        padding-bottom: 36px
+    }
+
+    .swiper-top {
+        align-self: center;
+        height: 75px;
+    }
+
+    .ac .accordion__heading {
+        font-size: 18px;
+        line-height: 32px;
+    }
+
+    .accordion__heading-text-wrap {
+        font-size: 18px;
+        line-height: 32px;
+        max-width: 210px;
+    }
+
+    .accordion__inner-list {
+        column-count: 2;
+    }
+
+    .accordion__gag-title {
+        font-size: 18px;
+        line-height: 32px;
+    }
+
+    .accordion__gag {
+        padding: 33px 6px;
+        padding-right: 0;
+    }
+
+    .accordion__gag-img {
+        width: 100px;
+        height: 79px;
+        outline-offset: 4px;
+        margin-right: 27px;
+    }
+
+    .catalog__descr {
+        display: none;
+    }
+
+    .catalog {
+        padding-top: 50px;
+        padding-bottom: 10px;
+    }
+
+    .catalog__title {
+        margin-bottom: 13px;
+    }
+
+    .ac .accordion__heading {
+        padding: 21px 50px 19px 0;
+    }
+
+    .accordion__content-wrap {
+        padding-top: 21px;
+        padding-bottom: 19px;
+    }
+
+    .head-icon {
+        padding-top: 1px;
+        width: 30px;
+        height: 30px;
+    }
+
+    .catalog__painter-photo {
+        margin-top: 51px;
+        margin-bottom: 16px;
+    }
+
+    .catalog__painter-life-years {
+        margin-bottom: 12px;
+    }
+
+    .events__title {
+        margin-bottom: 12px;
+    }
+
+    .events-card__content {
+        padding-top: 18px;
+        padding-left: 22px;
+    }
+
+    .events-card__place {
+        margin-bottom: 9px;
+    }
+
+    .swiper-horizontal>.swiper-pagination-bullets,
+    .swiper-pagination-bullets.swiper-pagination-horizontal {
+        bottom: -5%;
+    }
+
+    .swiper-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet,
+    .swiper-pagination-horizontal .swiper-pagination-bullets .swiper-pagination-bullet {
+        margin: 0px 7.5px;
+    }
+
+    .projects {
+        padding-top: 40px;
+        padding-bottom: 29px;
+    }
+
+    .projects__title {
+        margin-bottom: 12px;
+    }
+
+    .projects__subhead {
+        font-size: 18px;
+        line-height: 32px;
+    }
+
+    .projects__descr {
+        margin-bottom: 51px;
+    }
+
+    .projects__subhead {
+        margin-bottom: 11px;
+    }
+
+    .projects-link {
+        height: 65px;
+    }
+
+    .projects-img {
+        max-width: 56%;
+    }
+
+    .projects-wrapper {
+        padding: 0px 48px;
+    }
+
+    .projects-btn-next,
+    .projects-btn-prev {
+        top: 60%;
+    }
+
+    .map {
+        height: 337px;
+    }
+
+    .footer__wrapper {
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    .footer__logo {
+        margin: 0;
+        padding: 0;
+    }
+
+    .footer__link {
+        width: 50px;
+        height: 50px;
+    }
+
+    .footer__logo {
+        width: 97px;
+    }
+
+    .footer__wrapper {
+        padding-top: 20px;
+        padding-bottom: 16px;
+    }
+
+    .footer__link:not(:last-child) {
+        margin-right: 16px;
+    }
+
+    .footer__links {
+        margin-bottom: 17px;
+    }
+
+    .ymaps-2-1-79-controls__control {
+        display: none;
+    }
+
+    .modal {
+        width: 100%;
+    }
+
+    .modal__content {
+        flex-direction: column;
+    }
+
+    .modal-img {
+        width: 100%;
+        height: 350px
+    }
+
+    .modal__text {
+        padding: 20px;
+    }
+
+    .modal-date-period {
+        margin-bottom: 12px;
+    }
+
+    .modal-descr {
+        min-height: 280px;
+        max-width: 100%;
+    }
+
+    .header__search-mobile {
+        height: 75px;
+        right: 0px;
+        left: 0px;
+        background-color: rgba(0, 0, 0, 0.9);
+        justify-content: center;
+        transform: translateY(-50%) scaleY(0);
+    }
+
+    .panel__search-btn {
+        margin-right: 3px;
+    }
+
+    .panel__input {
+        width: 100%
+    }
+
+    .panel__form {  
+        width: 63%;
+        margin: 0;
+    }
+
+    .panel__close-btn {
+        position: absolute;
+        top: 15px;
+        right: 15px;
+    }
+
+}
+
+@media (max-width: 520px) {
+    .accordion__inner-list {
+        column-count: 1;
+    }
+
+    .gallary__block {
+        max-width: 100%;
+        margin-bottom: 23px;
+    }
+
+    .contacts__form {
+        display: block;
+        margin-bottom: 20px;
+    }
+
+    .contacts__location-title {
+        font-size: 18px;
+        line-height: 25px;
+        margin-bottom: 6px;
+    }
+
+    .contacts {
+        padding-top: 20px;
+    }
+
+    .contacts__wrapper {
+        border: none;
+    }
+
+    .contacts__location {
+        margin-bottom: 19px;
+    }
+
+    .contacts-input {
+        padding: 3px 23px;
+    }
+
+    .label-input {
+        margin-right: 0;
+        margin-bottom: 21px;
+    }
+
+    .contacts__btn-send {
+        font-size: 12px;
+        line-height: 16px;
+        padding: 11px 33px;
+    }
+
+    .contacts__sn-title {
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 32px;
+    }
+
+    .contacts__link svg {
+        width: 50px;
+        height: 50px;
+    }
+
+    .label-input {
+        width: 100%;
+    }
+
+    .contacts-btn-1 {
+        display: none;
+    }
+
+    .contacts-btn-2 {
+        display: inline;
+    }
+
+    .burger--active .burger__line:first-child {
+        width: 20px;
+    }
+
+    .burger--active .burger__line:last-child {
+        width: 20px;
+    }
+
+    .header__inner {
+        padding: 15px;
+        padding-top: 47px;
+    }
+
+    .nav-header .nav__link {
+        font-size: 16px;
+        line-height: 32px;
+    }
+
+    .header__account {
+        padding: 10px 38px;
+    }
+
+    .modal-img {
+        height: 200px
+    }
+}
