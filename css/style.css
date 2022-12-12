@@ -1313,8 +1313,12 @@ body {
 }
 
 .catalog__painter-photo {
+    text-align: center;
     margin-bottom: 26px;
+    max-height: 600px;
     object-fit: cover;
+    width: 100%;
+    
 }
 
 .catalog__painter-title {
